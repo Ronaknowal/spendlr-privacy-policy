@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Spendlr</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #00BFA5;
+            border-bottom: 3px solid #00BFA5;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #00796B;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #00695C;
+            margin-top: 20px;
+        }
+        .last-updated {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            background-color: #E0F2F1;
+            padding: 15px;
+            border-left: 4px solid #00BFA5;
+            margin: 20px 0;
+        }
+        .contact {
+            background-color: #F1F8F6;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        a {
+            color: #00BFA5;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy for Spendlr</h1>
+        <p class="last-updated"><strong>Last Updated:</strong> December 9, 2024</p>
+
+        <div class="highlight">
+            <p><strong>Your privacy matters to us.</strong> Spendlr is designed with privacy-first principles. We process receipt images locally on your device, automatically redact personal information before AI processing, and give you complete control over your financial data.</p>
+        </div>
+
+        <h2>1. Introduction</h2>
+        <p>Spendlr ("we", "our", or "us") is operated by SmallVector Studio. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application.</p>
+        <p>By using Spendlr, you agree to the collection and use of information in accordance with this policy.</p>
+
+        <h2>2. Information We Collect</h2>
+
+        <h3>2.1 Personal Information</h3>
+        <ul>
+            <li><strong>Account Information:</strong> When you sign up using Google Sign-In, we collect your email address, name, and profile picture from your Google account.</li>
+            <li><strong>User Profile:</strong> Display name, preferred currency, timezone, and optional profile picture.</li>
+        </ul>
+
+        <h3>2.2 Financial Data</h3>
+        <ul>
+            <li><strong>Expense Records:</strong> Transaction amounts, descriptions, dates, categories, and payment methods you enter.</li>
+            <li><strong>Categories:</strong> Custom expense categories you create or modify.</li>
+            <li><strong>Budgets:</strong> Budget limits and periods you set for different categories.</li>
+            <li><strong>Financial Goals:</strong> Savings goals, target amounts, and progress tracking data.</li>
+            <li><strong>Recurring Transactions:</strong> Information about recurring expenses or income you configure.</li>
+        </ul>
+
+        <h3>2.3 Media and Device Data</h3>
+        <ul>
+            <li><strong>Receipt Images:</strong> Photos of receipts you capture for scanning. <em>Important: Images are processed locally on your device using Google ML Kit OCR and are NOT uploaded to our servers unless you explicitly choose to store them.</em></li>
+            <li><strong>Voice Recordings:</strong> Audio data when you use the voice-to-expense feature. <em>Recordings are transcribed immediately and the audio is deleted—we do not store voice recordings.</em></li>
+            <li><strong>Device Information:</strong> Device type, operating system version, app version, and unique device identifiers for sync purposes.</li>
+            <li><strong>Location Data:</strong> Timezone information to ensure accurate transaction timestamps. We do NOT collect precise GPS location.</li>
+        </ul>
+
+        <h3>2.4 Automatically Collected Information</h3>
+        <ul>
+            <li><strong>Usage Data:</strong> App feature usage, error logs, and performance metrics to improve the app.</li>
+            <li><strong>Network Connectivity:</strong> Online/offline status to enable sync functionality.</li>
+        </ul>
+
+        <h2>3. How We Use Your Information</h2>
+        <p>We use the collected information for the following purposes:</p>
+        <ul>
+            <li><strong>Provide Core Features:</strong> Expense tracking, categorization, budget monitoring, and goal tracking.</li>
+            <li><strong>AI-Powered Categorization:</strong> Using Google Gemini AI to intelligently categorize expenses based on transaction descriptions (with PII redacted).</li>
+            <li><strong>Data Synchronization:</strong> Sync your data across multiple devices securely.</li>
+            <li><strong>Personalization:</strong> Customize your experience with preferred currency, categories, and insights.</li>
+            <li><strong>Analytics and Insights:</strong> Generate spending trends, category breakdowns, and financial insights.</li>
+            <li><strong>App Improvement:</strong> Analyze usage patterns to enhance features and fix bugs.</li>
+            <li><strong>Authentication:</strong> Verify your identity and secure your account.</li>
+            <li><strong>Communication:</strong> Send important service updates and security notifications (we do NOT send marketing emails without your consent).</li>
+        </ul>
+
+        <h2>4. Privacy-First Features</h2>
+        <p>Spendlr is designed with your privacy as a priority:</p>
+        <ul>
+            <li><strong>Local OCR Processing:</strong> Receipt scanning uses on-device Google ML Kit—images are processed locally and not sent to external servers.</li>
+            <li><strong>PII Redaction:</strong> Before any text is sent to AI services for categorization, we automatically remove personal identifiable information including names, email addresses, phone numbers, and credit card numbers.</li>
+            <li><strong>Encrypted Storage:</strong> All data is encrypted in transit (HTTPS) and at rest in our Supabase database.</li>
+            <li><strong>Local-First Architecture:</strong> The app works offline, storing data locally using Drift/SQLite. Data syncs only when you're online and authenticated.</li>
+            <li><strong>Row-Level Security:</strong> Database policies ensure you can only access your own data—even we cannot access your expenses without your authorization.</li>
+        </ul>
+
+        <h2>5. How We Share Your Information</h2>
+        <p>We do NOT sell, trade, or rent your personal information to third parties. We only share data in the following limited circumstances:</p>
+
+        <h3>5.1 Third-Party Service Providers</h3>
+        <p>We use trusted third-party services to operate our app:</p>
+        <ul>
+            <li><strong>Supabase (Database & Authentication):</strong> Securely stores your financial data with encryption and row-level security. <a href="https://supabase.com/privacy" target="_blank">Privacy Policy</a></li>
+            <li><strong>Google Sign-In:</strong> Handles authentication via OAuth. <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a></li>
+            <li><strong>Google Gemini AI:</strong> Processes anonymized, PII-redacted transaction descriptions for smart categorization. <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a></li>
+            <li><strong>Google ML Kit (On-Device):</strong> Performs OCR on receipt images entirely on your device. <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a></li>
+            <li><strong>Vercel (Backend Hosting):</strong> Hosts our API backend. <a href="https://vercel.com/legal/privacy-policy" target="_blank">Privacy Policy</a></li>
+        </ul>
+
+        <h3>5.2 Legal Requirements</h3>
+        <p>We may disclose your information if required by law, court order, or governmental request, or to protect our rights and safety.</p>
+
+        <h3>5.3 Business Transfers</h3>
+        <p>If Spendlr is acquired or merged, your data may be transferred to the new entity. We will notify you via email and/or app notification before any such transfer.</p>
+
+        <h2>6. Data Retention</h2>
+        <ul>
+            <li><strong>Active Accounts:</strong> We retain your data as long as your account is active.</li>
+            <li><strong>Deleted Accounts:</strong> When you delete your account, all personal data and financial records are permanently deleted within 30 days.</li>
+            <li><strong>Backups:</strong> Backup copies are retained for up to 90 days for disaster recovery, then permanently deleted.</li>
+            <li><strong>Legal Obligations:</strong> We may retain certain data if required by law (e.g., tax records).</li>
+        </ul>
+
+        <h2>7. Your Rights and Choices</h2>
+        <p>You have the following rights regarding your data:</p>
+        <ul>
+            <li><strong>Access:</strong> View all your data within the app at any time.</li>
+            <li><strong>Correction:</strong> Update or correct your profile and transaction data.</li>
+            <li><strong>Deletion:</strong> Delete individual transactions, categories, or your entire account via app settings.</li>
+            <li><strong>Data Export:</strong> Request a copy of your data in a portable format (contact us).</li>
+            <li><strong>Withdraw Consent:</strong> Revoke permissions for camera, microphone, or other features in your device settings.</li>
+            <li><strong>Opt-Out of Analytics:</strong> Disable usage analytics in app settings.</li>
+        </ul>
+
+        <h2>8. Data Security</h2>
+        <p>We implement industry-standard security measures to protect your data:</p>
+        <ul>
+            <li>End-to-end HTTPS encryption for all data transmission</li>
+            <li>Encrypted database storage (AES-256)</li>
+            <li>Secure authentication using Supabase JWT tokens with expiration</li>
+            <li>Regular security audits and updates</li>
+            <li>Row-level security policies in our database</li>
+        </ul>
+        <p><em>However, no method of transmission over the internet is 100% secure. While we strive to protect your data, we cannot guarantee absolute security.</em></p>
+
+        <h2>9. Children's Privacy</h2>
+        <p>Spendlr is not intended for children under 13 years of age. We do not knowingly collect personal information from children. If you believe we have collected data from a child, please contact us immediately, and we will delete it.</p>
+
+        <h2>10. International Data Transfers</h2>
+        <p>Your data may be stored and processed in servers located in different countries (via Supabase and Vercel). We ensure that appropriate safeguards are in place to protect your data in compliance with applicable data protection laws.</p>
+
+        <h2>11. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last Updated" date. For significant changes, we will notify you via:</p>
+        <ul>
+            <li>In-app notification</li>
+            <li>Email to your registered address</li>
+        </ul>
+        <p>Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+        <h2>12. California Privacy Rights (CCPA)</h2>
+        <p>If you are a California resident, you have additional rights under the California Consumer Privacy Act:</p>
+        <ul>
+            <li>Right to know what personal information is collected</li>
+            <li>Right to delete your personal information</li>
+            <li>Right to opt-out of data sales (we do NOT sell your data)</li>
+            <li>Right to non-discrimination for exercising your rights</li>
+        </ul>
+
+        <h2>13. European Privacy Rights (GDPR)</h2>
+        <p>If you are in the European Economic Area (EEA), you have rights under the General Data Protection Regulation:</p>
+        <ul>
+            <li>Right to access, rectification, and erasure of your data</li>
+            <li>Right to data portability</li>
+            <li>Right to restrict or object to processing</li>
+            <li>Right to lodge a complaint with a supervisory authority</li>
+        </ul>
+        <p><strong>Legal Basis for Processing:</strong> We process your data based on:</p>
+        <ul>
+            <li>Your consent (which you can withdraw at any time)</li>
+            <li>Contractual necessity (to provide the service you requested)</li>
+            <li>Legitimate interests (to improve and secure our service)</li>
+        </ul>
+
+        <div class="contact">
+            <h2>14. Contact Us</h2>
+            <p>If you have questions, concerns, or requests regarding this Privacy Policy or your data, please contact us:</p>
+            <p>
+                <strong>SmallVector Studio</strong><br>
+                Email: <a href="mailto:support@smallvector.com">support@smallvector.com</a><br>
+                Address: Dibrugarh, Assam, India
+            </p>
+            <p>We will respond to your inquiry within 30 days.</p>
+        </div>
+
+        <hr style="margin-top: 40px; border: none; border-top: 1px solid #ddd;">
+        <p style="text-align: center; color: #666; font-size: 14px;">
+            © 2024 SmallVector Studio. All rights reserved.<br>
+            Spendlr - Your AI-Powered Financial Companion
+        </p>
+    </div>
+</body>
+</html>
